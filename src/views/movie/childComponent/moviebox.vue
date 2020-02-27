@@ -37,11 +37,11 @@
           :data-actors="item.subject.actors"
           :data-introduce="item.introduce"
           :data-comment="item.subject.short_comment.content"
-          @click="showcontent"
+          @click.stop="showcontent"
         >简介>></div>
       </div>
     </scroll>
-    <van-popup v-model="show" position="top" custom-style="height:20%;">
+    <van-popup v-model="show" position="top" >
       <div class="popupContain">
         <div class="title">
           <b>片名:</b>
